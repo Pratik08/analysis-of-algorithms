@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 __author__ = "Pratik Dubal"
-__email__ = "pratik dot dubal at columbia dot edu"
+__email__ = "psd2120 at columbia dot edu"
 
 import math
 
@@ -69,6 +69,12 @@ def merge_sort(arr, left, right, inplace=False):
 
 def merge_sort_test():
     arr = [9, 6, 2, 5, 3, 2, 4, 8, 1, 7]
+    merge_sort(arr, 0, 9)
+    print('Sorted Array: ' + str(arr))
+    arr = [-9, -2, -5, -2, -4, -8, -1]
+    merge_sort(arr, 0, 9)
+    print('Sorted Array: ' + str(arr))
+    arr = [9, -6, -2, -5, 2, -4, 8, -1]
     merge_sort(arr, 0, 9)
     print('Sorted Array: ' + str(arr))
 
